@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>DUBAI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logo/faticon blanco.png">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo/logo dubai.png" alt="logo">
+                </a>
+            </div>
+            <nav class="nav-principal clearfix">
+                <a href="../nosotros.html">Nosotros</a>
+                <a href="../destinos.html">Destinos</a>
+                <a href="../hoteles.html">Hoteles</a>
+                <a href="../contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </div>
+    <section class=" contenido-destino1">
+        <h2>BULGARI RESORT</h2>
+        <img class="img-destinos" src="img/portada6.jpg" alt="">
+        <div class="contenedor texto-destinos">
+            <p>El Bulgari Hotel & Resorts, Dubai está situado en la bahía artificial de Jumeira, una isla tallada con forma de caballito de mar y que se une a la costa del centro de Dubái por un puente de 300 metros, consta de un puerto deportivo privado
+                con 50 amarres y alberga el primer club náutico Bulgari del mundo, con vistas panorámicas al mar.
+            </p>
+            <p>El complejo ofrece 101 habitaciones y suites, así como 20 villas Bulgari con vistas a la piscina, el jardín y el mar.</p>
+            <p>El Bulgari Resort & Residences Dubai cuenta con todo tipo de instalaciones, como el restaurante gourmet Il Ristorante - Niko Romito, el Il Café, abierto todo el día, Il Bar y su emblemática barra ovalada independiente, y La Spiagia, un club
+                de playa muy exclusivo y equipado con playa privada y una piscina exterior con un diseño de mosaico exclusivo.
+            </p>
+            <a href="https://www.booking.com/hotel/ae/bulgari-resorts-dubai.es.html?aid=356980;label=gog235jc-1DCAsoAkIMYnVyai1hbC1hcmFiSApYA2gyiAEBmAEKuAEXyAEM2AED6AEB-AECiAIBqAIDuALfzdX6BcACAdICJDc5ZWQ1MmI3LTEzMjctNDBkMS1hZjUyLTEzOTVhMTMyM2EyZtgCBOACAQ;sid=a7528e55dfa7870b663d7bf274e099f7;dest_id=-782831;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=11;hpos=11;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=bayesian_review_score;srepoch=1599432555;srpvid=053da0757fb8013c;type=total;ucfs=1&#hotelTmpl"
+                class="button">Mas Informacion</a>
+
+        </div>
+    </section>
+    <section>
+        <h2>Ubicacion</h2>
+        <div id="mapid" style=" height: 400px;"></div>
+
+        <script>
+            var mymap = L.map('mapid').setView([25.210678, 55.236427], 18);
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                maxZoom: 18,
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                id: 'mapbox/streets-v11',
+                tileSize: 512,
+                zoomOffset: -1
+            }).addTo(mymap);
+
+            L.marker([25.210678, 55.236427]).addTo(mymap)
+                .bindPopup("Bulgari Resort.").openPopup();
+
+            var popup = L.popup();
+        </script>
+        <div class="nav-info contenedor">
+
+            <h3><a href="hotel4.html"><i class="fas fa-arrow-left"></i></a>GROSVENOR HOUSE HOTEL</i>
+                </a>
+            </h3>
+        </div>
+        <footer class="site-footer">
+            <div class="contenedor clearfix">
+                <div class="footer-informacion">
+                    <h3>Sobre <span>Dubai</span></h3>
+                    <p>Viajar a Dubai desde Colombia es un sueño para muchos. Aunque no es la capital de Emiratos Árabes Unidos (EAU) si es la ciudad más poblada y una de las más populares del país. Por su cultura y sus excentricidades esta ciudad cautiva
+                        la atención de millones de turistas al año y se posiciona como una de las 10 más visitadas del mundo, siendo la primera de medio oriente.
+
+                    </p>
+                </div>
+                <div class="ultimos-tweets">
+                    <h3>Últimos <span>tweets</span></h3>
+                    <ul>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h3>Redes <span>sociales</span></h3>
+                    <nav class="redes-sociales">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                    </nav>
+                </div>
+            </div>
+
+            <p class="copyright">
+                Todos los derechos Reservados DUBAI 2020.<br> DESARROLLADO POR <em> <a href="https://www.instagram.com/josemestre14/">J.D.MESTRE</a> </em>
+            </p>
+        </footer>
+        <!-- Add your site or application content here -->
+
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="https://kit.fontawesome.com/52e25b6e29.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function() {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto');
+            ga('set', 'anonymizeIp', true);
+            ga('set', 'transport', 'beacon');
+            ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js " async></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>DUBAI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logo/faticon blanco.png">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/logo dubai.png" alt="logo">
+                </a>
+            </div>
+            <nav class="nav-principal clearfix">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="destinos.html">Destinos</a>
+                <a href="hoteles.html">Hoteles</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </div>
+
+    <h2>Contacto</h2>
+    <div class="img-con">
+        <img src="img/contacto.jpg" alt="Imagen Principal">
+    </div>
+    <main class="contenedor seccion contenido-centrado">
+        <h3 class="sub-con centrar-texto">Llena el formulario de Contacto</h3>
+
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>
+                    <h3>Información Personal</h3>
+                </legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+
+                <label for="Pregunta">PREGUNTA: </label>
+                <textarea id="Pregunta"></textarea>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>
+                    <h3>Información sobre Hotel</h3>
+                </legend>
+                <label for="opciones">Extrellas</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="5 Extrellas">5 Extrellas</option>
+                    <option value="4 Extrellas">4 Extrellas</option>
+                    <option value="3 Extrellas">3 Extrellas</option>
+                   
+                </select>
+
+                <label for="cantidad">Cantidad de Personas:</label>
+                <input type="number" min="0" max="10" step="5">
+
+                <label for="fecha">Fecha de Legada:</label>
+                <input type="date" id="fecha">
+                <label for="fecha">Fecha de Salida:</label>
+                <input type="date" id="fecha">
+
+
+
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="button ">
+
+        </form>
+    </main>
+    <footer class="site-footer">
+        <div class="contenedor clearfix">
+            <div class="footer-informacion">
+                <h3>Sobre <span>Dubai</span></h3>
+                <p>Dubái, capital de uno de los siete emiratos del país Emiratos Árabes Unidos, es conocida por ser la más moderna y tolerante de Oriente Medio. Más allá de un hub de conexiones y destino de lujo es, asimismo, una metrópoli abierta a cualquier
+                    tipo de viajero y en especial a las familias ya que cuenta con una gran oferta de ocio para los más jóvenes de la casa. </p>
+            </div>
+            <div class="ultimos-tweets">
+                <h3>Últimos <span>tweets</span></h3>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="redes-sociales">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                </nav>
+            </div>
+        </div>
+
+        <p class="copyright">
+            Todos los derechos Reservados DUBAI 2020.<br> DESARROLLADO POR <em> <a href="https://www.instagram.com/josemestre14/">J.D.MESTRE</a> </em>
+        </p>
+    </footer>
+    <!-- Add your site or application content here -->
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="https://kit.fontawesome.com/52e25b6e29.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js " async></script>
+</body>
+
+</html>

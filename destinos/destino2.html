@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>DUBAI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logo/faticon blanco.png">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo/logo dubai.png" alt="logo">
+                </a>
+            </div>
+            <nav class="nav-principal clearfix">
+                <a href="../nosotros.html">Nosotros</a>
+                <a href="../destinos.html">Destinos</a>
+                <a href="../hoteles.html">Hoteles</a>
+                <a href="../contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </div>
+    <section class=" contenido-destino1">
+        <h2>Ski Dubái</h2>
+        <img class="img-destinos" src="img/destino2.jpg" alt="">
+        <div class="contenedor texto-destinos">
+            <p>Ski Dubai es la pista de esquí indoor más grande del mundo. En ella se puede practicar esquí, snowboard y otras actividades invernales. Se encuentra en el interior del Mall of the Emirates, un inmenso centro comercial.
+            </p>
+            <p>Las dimensiones de la pista hablan por si solas: 85 metros de altura, 80 metros de anchura y una longitud máxima de 400 metros. Hay cinco recorridos con diferentes niveles de dificultad. Como cualquier estación de esquí que se precie, Ski
+                Dubai ofrece cursos de esquí y snowboard durante todo el año. Los precios de las clases son un poco más altos que los de las estaciones tradicionales.</p>
+            <h3>¿Qué hay que llevar?</h3>
+            <p>Si no queréis esquiar, también hay una entrada de paseo. Con ella podréis, entre otras cosas, lanzaros por los toboganes helados o tomar una copa en el bar de hielo.
+
+            </p>
+
+            <a href="https://www.skidxb.com/?_ga=2.110893446.2037991984.1599431115-2113227200.1598394510" class="button">Mas Informacion</a>
+
+        </div>
+    </section>
+    <section>
+        <h2>Ubicacion</h2>
+        <div id="mapid" style=" height: 400px;"></div>
+
+        <script>
+            var mymap = L.map('mapid').setView([25.117187, 55.198318], 18);
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                maxZoom: 18,
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                id: 'mapbox/streets-v11',
+                tileSize: 512,
+                zoomOffset: -1
+            }).addTo(mymap);
+
+            L.marker([25.117187, 55.198318]).addTo(mymap)
+                .bindPopup("Ski Dubái.").openPopup();
+
+
+            var popup = L.popup();
+        </script>
+    </section>
+    <div class="nav-info contenedor">
+
+        <h3><a href="destino1.html"><i class="fas fa-arrow-left"></i></a>GLOBAL VILLAGE - IMG WORLDS OF ADVENTURE<a href="destino3.html"><i class="fas fa-arrow-right"></i></a></h3>
+    </div>
+    <footer class="site-footer">
+        <div class="contenedor clearfix">
+            <div class="footer-informacion">
+                <h3>Sobre <span>Dubai</span></h3>
+                <p>Viajar a Dubai desde Colombia es un sueño para muchos. Aunque no es la capital de Emiratos Árabes Unidos (EAU) si es la ciudad más poblada y una de las más populares del país. Por su cultura y sus excentricidades esta ciudad cautiva la
+                    atención de millones de turistas al año y se posiciona como una de las 10 más visitadas del mundo, siendo la primera de medio oriente.
+
+                </p>
+            </div>
+            <div class="ultimos-tweets">
+                <h3>Últimos <span>tweets</span></h3>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolor rem voluptate libero ut aperiam tempore, illo officiis</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="redes-sociales">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                </nav>
+            </div>
+        </div>
+
+        <p class="copyright">
+            Todos los derechos Reservados DUBAI 2020.<br> DESARROLLADO POR <em> <a href="https://www.instagram.com/josemestre14/">J.D.MESTRE</a> </em>
+        </p>
+    </footer>
+    <!-- Add your site or application content here -->
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="https://kit.fontawesome.com/52e25b6e29.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js " async></script>
+</body>
+
+</html>
